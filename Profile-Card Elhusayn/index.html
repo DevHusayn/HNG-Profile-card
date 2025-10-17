@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <article class="profile-card" data-testid="test-profile-card">
+        <header class="profile-header">
+            <figure>
+                <img src="my photo.jpg" alt="User Avatar" class="profile-img" data-testid="test-user-avatar">
+            </figure>
+            <div class="profile-info">
+                <h2 data-testid="test-user-name">MUBARAK HUSAYN ADELOKUN</h2>
+                <p data-testid="test-user-bio">
+                    An aspiring frontend developer passionate about building clean,
+                    responsive, and user-friendly web designs.
+                    I enjoy learning new technologies and creating solutions
+                    that combine creativity with purpose.
+                </p>
+            </div>
+        </header>
+
+        <section class="time-box">
+            <p>
+                <strong>&#128336; Current Time (ms): </strong>
+                <span id="currentTime" data-testid="test-user-time"></span>
+            </p>
+        </section>
+        <nav data-testid="test-user-social-links" class="social-links">
+            <a href="https://x.com/MubarakHusayn" target="_blank" rel="noopener noreferrer"
+                data-testid="test-user-social-twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/husayn-mubarak-adelokun-312178231" target="_blank"
+                rel="noopener noreferrer" data-testid="test-user-social-linkedin">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/DevHusayn" target="_blank" rel="noopener noreferrer"
+                data-testid="test-user-social-github">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+        </nav>
+
+        <div class="lists">
+            <section aria-labelledby="hobbies-heading">
+                <h3 id="hobbies-heading">❤️ Hobbies & Interests</h3>
+                <ul data-testid="test-user-hobbies">
+                    <li class="green">&#128640;Travelling</li>
+                    <li class="blue">💻 Coding</li>
+                    <li class="purple">📚 Reading </li>
+                    <li class="orange">🍳 Making Research</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="dislikes-heading">
+                <h3 id="dislikes-heading">&#128078; Things I Dislike</h3>
+                <ul data-testid="test-user-dislikes">
+                    <li class="red">💻 Poorly written code</li>
+                    <li class="yellow">🔊 Loud noises</li>
+                    <li class="gray">⏰ Being late</li>
+                    <li class="lavender">🚫 Inaccessible websites</li>
+                </ul>
+            </section>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
